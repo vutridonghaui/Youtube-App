@@ -1,0 +1,21 @@
+<section>
+  <h1>Youtube</h1>
+  <div class="menu">
+    <button mat-icon-button [matMenuTriggerFor]="menu">
+      <mat-icon>settings</mat-icon>
+    </button>
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item (click)="openDialog()">
+        <mat-icon>pageview</mat-icon>
+        <span>Quantity of page</span>        
+      </button>
+      <button mat-menu-item>
+        <mat-icon>vpn_key</mat-icon>
+        <span>Api key</span>
+      </button>
+    </mat-menu>
+  </div>
+  <app-input></app-input>
+  <app-list [num]="slide"></app-list>
+  
+</section>
